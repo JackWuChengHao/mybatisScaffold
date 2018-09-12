@@ -5,12 +5,12 @@
 	<artifactId>mybatis_lab</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
- <parent>
- 	<groupId>xiaowulab</groupId>
- 	<artifactId>root</artifactId>
- 	<version>0.0.1-SNAPSHOT</version>
- </parent>
-	
+	<parent>
+		<groupId>xiaowulab</groupId>
+		<artifactId>root</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
