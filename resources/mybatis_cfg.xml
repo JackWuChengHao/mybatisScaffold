@@ -1,0 +1,34 @@
+<!DOCTYPE configuration
+    PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+	<!-- 数据库配置文件 -->
+	<properties resource="jdbc.properties" />
+	<!-- 实体类的别名 -->
+	<!-- <typeAliases> -->
+	<!-- <package name="com.oop.eksp.user.model.User"/> -->
+	<!-- </typeAliases> -->
+	<!-- 配置mybatis环境 -->
+	<environments default="GoodsMybatis">
+		<environment id="GoodsMybatis">
+			<transactionManager type="JDBC">
+				<!-- <property name="" value=""/> 标准文件中这条没用到先注释掉 -->
+			</transactionManager>
+			<dataSource type="POOLED">
+				<property name="driver" value="${jdbc.driverClassName}" />
+				<property name="url" value="${jdbc.url}" />
+				<property name="username" value="${jdbc.username}" />
+				<property name="password" value="${jdbc.password}" />
+			</dataSource>
+		</environment>
+	</environments>
+
+	<!-- 先注释掉后面用到再加进来 <mappers> <mapper resource="com/ss/mappers/GoodsMapper.xml"/> 
+		</mappers> 另一种指定包 <package name="com/ss/mappers"> -->
+	<!-- 配置映射文件 -->
+	<mappers>
+		<package name="com/oop/eksp/user/data" />
+	</mappers>
+</configuration>
